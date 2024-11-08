@@ -1,10 +1,21 @@
+// console.log("sum module executed");
+
+// var x = "hello world  ";
+
+// function calculateSum(a, b) {
+//   sum = a + b;
+//   console.log(sum);
+// }
+
+// module.exports = { x: x, calculateSum: calculateSum };
+
 console.log("sum module executed");
 
-var x = "hello world  ";
+export var x = "hello world  ";
 
-function calculateSum(a, b) {
-  sum = a + b;
+export function calculateSum(a, b) {
+  var sum = a + b;
   console.log(sum);
 }
 
-module.exports = { x: x, calculateSum: calculateSum };
+// module.exports = { x: x, calculateSum: calculateSum };
