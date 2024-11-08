@@ -1,10 +1,10 @@
-require('./xyz.js');
-require('./sum.js');
-const calculateSum = require('./sum.js');
-
+require("./xyz.js");
+require("./sum.js");
+const obj = require("./sum.js");
 
 var name = "namaste Nodejs";
 
-var a=10;
-var b=20;
-calculateSum(a,b);
+var a = 10;
+var b = 20;
+obj.calculateSum(a, b);
+console.log(obj.x);
