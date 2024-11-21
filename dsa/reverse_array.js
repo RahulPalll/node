@@ -13,3 +13,18 @@ function reverseArray(array) {
 
 console.log(reverseArray([1, 2, 3, 4, 5, 6]));
 console.log(reverseArray([1]));
+
+function reverseArray2(array) {
+  if (array.length == 1) {
+    return array;
+  } else {
+    let reverseArray = [];
+    for (let i = 0; i < array.length; i++) {
+      reverseArray.unshift(array[i]);
+    }
+    return reverseArray;
+  }
+}
+
+console.log(reverseArray2([1, 2, 3, 4, 5, 6]));
+console.log(reverseArray2([1]));
